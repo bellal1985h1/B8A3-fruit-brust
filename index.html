@@ -4,6 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
+
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css"
       rel="stylesheet"
@@ -26,6 +33,7 @@
   <style>
     * {
       box-sizing: border-box;
+      font-family: "Lato", sans-serif;
     }
     body {
       padding: 0;
@@ -38,32 +46,40 @@
 
       <section class="navbar-section mt-10">
         <div
-          class="navbar-container justify-center items-center border-2 max-w-screen-lg mx-auto grid lg:grid-cols-3 bg-[#F85559] py-3 px-3 lg:rounded-full grid-cols-1"
+          class="navbar-container justify-center items-center border-2 max-w-screen-lg mx-auto grid lg:grid-cols-3 bg-[#F85559] py-3 lg:rounded-full grid-cols-1 px-8"
         >
           <div
             class="menu-items flex lg:flex-row justify-center items-center list-none flex-col"
           >
-            <li class="mr-3 text-lg text-[#fff]"><a href="">Home</a></li>
-            <li class="mr-3 text-lg text-[#fff]"><a href="">About Us</a></li>
-            <li class="mr-3 text-lg text-[#fff]"><a href="">Shop</a></li>
-            <li class="mr-3 text-lg text-[#fff]"><a href="">All Fruits</a></li>
+            <li class="mr-3 text-lg text-[#fff] font-medium">
+              <a href="">Home</a>
+            </li>
+            <li class="mr-3 text-lg text-[#fff] font-medium">
+              <a href="">About Us</a>
+            </li>
+            <li class="mr-3 text-lg text-[#fff] font-medium">
+              <a href="">Shop</a>
+            </li>
+            <li class="mr-3 text-lg text-[#fff] font-medium">
+              <a href="">All Fruits</a>
+            </li>
           </div>
 
           <div class="nav-logo flex justify-center items-center">
             <img class="" src="./images/logo.png" alt="" />
-            <h3 class="text-4xl ml-2 text-[#fff]">Fruit Burst</h3>
+            <h3 class="text-4xl ml-2 text-[#fff] font-bold">Fruit Burst</h3>
           </div>
 
           <!-- component searchbar -->
 
-          <div class="pt-2 relative mx-auto text-gray-600">
+          <div class="pt-2 relative m x-auto text-gray-600">
             <input
-              class="border-2 border-gray-300 bg-white h-10 px-5 pr-16 rounded-lg text-sm focus:outline-none"
+              class="border-2 border-gray-300 bg-white h-10 px-5 w-full rounded-full text-sm focus:outline-none text-base"
               type="search"
               name="search"
-              placeholder="Search"
+              placeholder="Search here"
             />
-            <button type="submit" class="absolute right-0 top-0 mt-5 mr-4">
+            <button type="submit" class="absolute right-0 top-0 mt-5 mr-5">
               <svg
                 class="text-gray-600 h-4 w-4 fill-current"
                 xmlns="http://www.w3.org/2000/svg"
@@ -75,7 +91,7 @@
                 viewBox="0 0 56.966 56.966"
                 style="enable-background: new 0 0 56.966 56.966"
                 xml:space="preserve"
-                width="w-1/2"
+                width="w-full"
                 height="w-1/2"
               >
                 <path
@@ -367,6 +383,19 @@
               />
             </div>
             <a href="">Details...</a>
+            <!-- The button to open modal -->
+            <a href="#my_modal_8" class="btn">Details</a>
+            <!-- Put this part before </body> tag -->
+            <div class="modal" id="my_modal_8">
+              <div class="modal-box">
+                <h3 class="font-bold text-lg">Hello!</h3>
+                <p class="py-4">This modal works with anchor links</p>
+                <img src="./images/banner1.png" alt="" />
+                <div class="modal-action">
+                  <a href="#" class="btn">Yay!</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="card bg-base-100 shadow-xl">
